@@ -5,7 +5,7 @@ run: all
 all: libtest-exception.so main
 
 libtest-exception.so: exception.o
-	g++ -fPIC exception.cpp -shared -o libtest-exception.so
+	g++ -fPIC exception.cpp -shared -Wl,--version-script=version-script -o libtest-exception.so
 	chmod +x libtest-exception.so
 
 main: main.o
