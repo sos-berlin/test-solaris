@@ -1,4 +1,4 @@
 {
   global: testException;
-  local: *; 
+  local: *;
 };
